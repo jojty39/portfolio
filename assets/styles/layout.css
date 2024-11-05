@@ -1,0 +1,25 @@
+@charset "utf-8";
+
+/**** header ****/
+header {}
+
+
+
+/**** footer ****/
+footer {
+
+}
+
+
+
+
+
+/* 1020px 이상일 때 */
+@media (min-width:1020px) {
+  /**** header ****/
+  header {}
+
+
+  /**** footer ****/
+  footer {}
+}

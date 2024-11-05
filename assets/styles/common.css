@@ -1,0 +1,154 @@
+@charset "utf-8";
+
+/**** fonts ****/
+/* 'Pretendard Variable' */
+@import url(./pretendardvariable.css);
+/*  
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap');
+
+/**** css 변수 ****/
+/* 전역 변수 */
+:root {/* 선언(설정) */
+  --font-family-ko : "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+
+
+  --font-size-xxxxl: 2.987rem; /* 47.8px */ 
+  --font-size-xxxl: 2.487rem; /* 39.8px */
+  --font-size-xxl: 2.075rem; /* 33.2px */
+  --font-size-xl: 1.725rem; /* 27.6px */
+  --font-size-l: 1.438rem; /* 23px */
+  --font-size-ml: 1.2rem; /* 19.2px */
+  --font-size-m: 1rem; /*** 16px ***/
+  --font-size-ms: 0.831rem; /* 13.3px */
+  --font-size-xs: 0.694rem; /* 11.1px */
+  --font-size-xxs: 0.606rem; /* 9.7px */
+
+  --color-dark1: #000000;
+  --color-dark2: #4f4f4f;
+
+  --color-gray1: #b1b1b1;
+  --color-gray2: #bbbbbb;
+
+  --color-white1: #ffffff;
+  --color-white2: #f5f5f5;
+  --color-white3: #dddddd;
+  
+  --color-blue1: #0988f0;
+  --color-blue2: #f4f9ff;
+
+  --color-yellow1: #ffb800;
+  --color-yellow2: #fffbf2;
+
+
+
+
+  --line-height: 1.6;
+
+  --spacing-xlg: 2.5rem;/* 40px */
+  --spacing-lg: 2.125rem; /* 34px */
+  --spacing-md: 1.25rem; /* 20px */
+  --spacing-sm: 1.125rem; /* 18px */ 
+  --spacing-xsm: 0.625rem; /* 10px */
+}
+
+
+/*****  모바일 390 기준 양옆 마진 16px 
+/ pc 1900 기준 양옆 마진 250px   *****/
+
+/**** global style ****/
+/* 부드러운 스크롤 */
+html {
+  scroll-behavior: smooth;
+}
+/* 드래그 */
+html ::selection {
+  background-color: var(--color-white2);
+  color: var(--color-dark1);
+}
+/* 스크롤바 */
+html ::-webkit-scrollbar {
+  width: 10px;
+}
+html ::-webkit-scrollbar-track {
+  background-color: var(--color-white1);
+}
+html ::-webkit-scrollbar-thumb {
+  background-color: var(--color-dark1);
+  box-shadow: 0 1px 10px var(--color-white2);
+  /* border: 1px solid var(--color-dark1); */
+  border-radius: 10px;
+}
+
+.flex-container {
+  display: flex;
+  align-items: center;
+}
+.grid-container {
+  display: grid;
+}
+.margin-sm {
+  margin: 0 var(--spacing-sm);
+}
+.margin-md {
+  margin: 0 var(--spacing-md);
+}
+.margin-lg {
+  margin: 0 var(--spacing-lg);
+}
+.padding-sm {
+  padding: 0 var(--spacing-sm);
+}
+.padding-md {
+  padding: 0 var(--spacing-md);
+}
+.padding-lg {
+  padding: 0 var(--spacing-lg);
+}
+
+
+
+
+
+/**** body ****/
+body {
+  /* css 변수 적용 var() */
+  font-family: var(--font-family-ko);
+  color: var(--color-dark1);
+  line-height: 1.5;
+  word-break: break-all;
+  word-wrap: break-word;
+  text-transform: capitalize;
+}
+
+
+/* 1020px 이상일 때 */
+@media (min-width:1020px) {
+  /*
+  :root { 
+    --font-main-title-xxlg: 3.5rem;
+    --font-main-title-xlg: 3rem;
+    --font-main-title-lg: 1.7rem;
+    --font-main-title-md: 1.5rem;
+    --font-main-title-sm: 0.95rem;
+
+    --spacing-5xlg: 6.6666rem;120px
+    --spacing-lg: 3.3333rem;60px
+    --spacing-md: 2.2222rem;40px
+    --spacing-sm: 2rem;36px
+    --spacing-xsm: 1.1111rem;20px
+  }
+
+  html {
+    font-size: 18px;
+  }
+
+  .main-title {
+    margin-top: var(--spacing-5xlg);
+  }
+  */
+}
