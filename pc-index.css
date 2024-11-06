@@ -142,6 +142,11 @@ header .gnb .plus-btn a {
     font-weight: 600;
     width: 50%;
 }
+.main-contents .main-skills-wrap .main-skills-list li:nth-child(1) h2 {
+    /* background-color: dodgerblue; */
+    padding-top: 0px;
+
+}
 .main-contents .main-skills-wrap .main-skills-list li ul {
     font-size: var(--font-size-ml);
     width: 50%;
@@ -290,14 +295,21 @@ footer .footer-folder .folder-list {
 }
 footer .footer-folder .folder-list h4 {
     font-size: var(--font-size-m);
-    font-weight: 600;
+    font-weight: 700;
     text-align: left;
     margin-bottom: 10px;
+    letter-spacing: normal;
 
 }
 footer .footer-folder .folder-list .footer-contact {
-    
+    /* background-color: darkblue; */
+    /* display: flex; */
+    display: block;
+    /* justify-content: flex-start; */
+    /* justify-content: space-around; */
+
 }
+
 
 footer .footer-folder .folder-list .footer-contact li {
     font-size: var(--font-size-ms);
@@ -313,8 +325,7 @@ footer .footer-folder .folder-list p {
     color: var(--color-gray2);
     font-size: var(--font-size-xxs);
     font-weight: 400;
-    text-align: right;
-    
+    text-align: right;   
 
 }
 
