@@ -64,14 +64,14 @@ header .gnb .plus-btn a {
     margin: 80px 0 16px 0;   
 }
 
-
+/********** 마우스 스크롤 시, 컨텐츠박스 라운드 처리!!(js,gsap)  **********/
 /*****  main-contents *****/
 .main-contents {
     /* width: 1380px; */
     margin: 16px auto;
     width: 90%;
-    
 }
+
 
 /***** main-intro *****/
 .main-contents .main-intro {
@@ -80,33 +80,45 @@ header .gnb .plus-btn a {
     border-radius: 40px;
     /* margin: 16px auto; */
     /* height: 70vh; */
-
+    position: relative;
+    isolation: isolate;
+    overflow: hidden;
 }
-.main-contents .main-intro ul {
-
+/********** 스크롤 시 라운드!! **********/
+.main-contents .main-intro:hover {
+    border-radius: 80px;
+    transition: all 1s ease-in-out;
 }
+
 .main-contents .main-intro ul li {}
-.main-contents .main-intro ul .intro-img {
-    padding: 80px 50px 50px 50px ;
-    height: 40vh;
-    /* height: 620px; */
-    text-align: center;
-    /* line-height: 30vh; */
+
+
+/***** main-intro  video *****/
+.main-contents .main-intro ul {
+    overflow: hidden;
+}
+.main-contents .main-intro ul .video_bg {}
+
+.main-contents .main-intro ul .video_bg video {
+    object-fit: cover;
+    height: 50vh;
 }
 
 .main-contents .main-intro ul .intro-txt {
-    padding: 50px 50px 80px 50px;    
+    padding: 20px 36px 46px 36px;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 .main-contents .main-intro ul .intro-txt h1 {
-    font-size: var(--font-size-xxl);
-    font-size: 1.438rem;
-}
-.main-contents .main-intro ul .intro-txt h3 {
     font-size: var(--font-size-l);
 }
+
 .main-contents .main-intro ul .intro-txt p {
     color: var(--color-gray2);
     font-size: var(--font-size-ms);
+    /* font-size: var(--font-size-xs); */
 }
 
 /*****  main-skills *****/
@@ -114,24 +126,29 @@ header .gnb .plus-btn a {
 .main-contents .main-skills {}
 .main-contents .main-skills .main-title {}
 
-
 .main-contents .main-skills-wrap {
     border: 1px solid var(--color-dark1);
     border-radius: 40px;
     background-color: var(--color-white2);
     padding: 16px;
+    /* margin: 0 auto; */
+}
+.main-contents .main-skills-wrap:hover {
+    border-radius: 80px;
+    transition: all 1s ease-in-out;
 }
 
 /***  main-skills-list ***/
 .main-contents .main-skills-wrap .main-skills-list {
-    /* padding: 4%; */
+
 }
 .main-contents .main-skills-wrap .main-skills-list .main-skils-box {
     display: flex;
     flex-direction: column;
     align-items: center;
     border-bottom: 1px solid var(--color-white3);
-    /* padding: 5%; */
+    /* margin: 0 auto; */
+
 }
 .main-contents .main-skills-wrap .main-skills-list .main-skils-box:last-child {
     border-bottom: none;
@@ -141,17 +158,25 @@ header .gnb .plus-btn a {
     font-weight: 500;
     width: 100%;
     margin: 16px 0 0;
+    /* padding-left: 30px; */
+    padding: 16px 8px 0 16px;
+
+}
+.main-contents .main-skills-wrap .main-skills-list li:nth-child(1) h2 {
+    /* background-color: dodgerblue; */
+    padding-top: 32px;
 
 }
 .main-contents .main-skills-wrap .main-skills-list li ul {
-    font-size: var(--font-size-m);
-    margin: 16px 0 16px;
+    font-size: var(--font-size-ms);
+    /* margin: 16px 0 16px; */
     /* font-weight: 500; */
     width: 100%;
 
-    /* padding: 20px; */
+    padding: 0 16px 0 64px;
+    padding: 16px 8px 32px 36px;
     line-height: 1.8;
-    padding-left: 30px;
+    /* padding-left: 30px; */
     list-style: disc;
 }
 .main-contents .main-skills-wrap .main-skills-list li ul li {}
@@ -197,6 +222,11 @@ header .gnb .plus-btn a {
     width: 144px;  
 }
 
+.main-contents .main-works .main-works-wrap .works-list li .works-list-img:hover {
+    /* border-radius: 80px; */
+    /* transition: all 1s ease-in-out; */
+}
+
 .main-contents .main-works .main-works-wrap .works-list li .works-tit {
 
     height: 408px;
@@ -206,6 +236,11 @@ header .gnb .plus-btn a {
 
     position: relative;
 }
+.main-contents .main-works .main-works-wrap .works-list li .works-tit:hover, .main-contents .main-works .main-works-wrap .works-list li .works-list-img:hover {
+    border-radius: 80px;
+    transition: all 1s ease-in-out;
+}
+
 .main-contents .main-works .main-works-wrap .works-list li .works-tit img {
     position: absolute;
     width: 66px;

@@ -81,31 +81,35 @@ header .gnb .plus-btn a {
     /* height: 70vh; */
 
 }
-.main-contents .main-intro ul {
-
-}
+.main-contents .main-intro ul {}
 .main-contents .main-intro ul li {}
-.main-contents .main-intro ul .intro-img {
-    padding: 80px 50px 50px 50px ;
-    height: 40vh;
-    /* height: 620px; */
-    text-align: center;
-    /* line-height: 30vh; */
+
+/***** main-intro  video *****/
+.main-contents .main-intro ul {
+    /* overflow: hidden; */
 }
+.main-contents .main-intro ul .video_bg {
+}
+
+.main-contents .main-intro ul .video_bg video {
+    /* object-fit: cover; */
+    height: 60vh;
+}
+
 
 .main-contents .main-intro ul .intro-txt {
-    padding: 50px 50px 80px 50px;    
+    padding: 40px 40px 60px 80px; 
+    
+    /* display: flex; */
+    /* align-items: center; */
 }
 .main-contents .main-intro ul .intro-txt h1 {
-    font-size: var(--font-size-xxl);
-    font-size: 1.438rem;
-}
-.main-contents .main-intro ul .intro-txt h3 {
-    font-size: var(--font-size-l);
+    font-size: var(--font-size-xl);
+    /* font-size: 1.438rem; */
 }
 .main-contents .main-intro ul .intro-txt p {
     color: var(--color-gray2);
-    font-size: var(--font-size-ms);
+    font-size: var(--font-size-m);
 }
 
 /*****  main-skills *****/
@@ -122,13 +126,12 @@ header .gnb .plus-btn a {
 
 /***  main-skills-list ***/
 .main-contents .main-skills-wrap .main-skills-list {
-    padding: 50px 100px;
+    padding: 55px 100px;
 }
 .main-contents .main-skills-wrap .main-skills-list .main-skils-box {
     display: flex;
     flex-direction: row;
     align-items: center;
-    /* background-color: aquamarine; */
     border-bottom: 1px solid var(--color-white3);
 }
 .main-contents .main-skills-wrap .main-skills-list .main-skils-box:last-child {
@@ -141,9 +144,7 @@ header .gnb .plus-btn a {
 }
 .main-contents .main-skills-wrap .main-skills-list li ul {
     font-size: var(--font-size-ml);
-    /* font-weight: 500; */
     width: 50%;
-    /* padding: 20px; */
     line-height: 1.8;
 }
 .main-contents .main-skills-wrap .main-skills-list li ul li {}
