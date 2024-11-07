@@ -140,12 +140,15 @@ header .gnb .plus-btn a {
 
 /***  main-skills-list ***/
 .main-contents .main-skills-wrap .main-skills-list {
+    margin: 0 auto;
+    /* width: 390px; */
 
 }
 .main-contents .main-skills-wrap .main-skills-list .main-skils-box {
-    display: flex;
+       display: flex;
     flex-direction: column;
     align-items: center;
+    /* justify-content: center; */
     border-bottom: 1px solid var(--color-white3);
     /* margin: 0 auto; */
 
@@ -172,6 +175,7 @@ header .gnb .plus-btn a {
     /* margin: 16px 0 16px; */
     /* font-weight: 500; */
     width: 100%;
+    
 
     padding: 0 16px 0 64px;
     padding: 16px 8px 32px 36px;
@@ -189,14 +193,14 @@ header .gnb .plus-btn a {
     flex-direction: column;
 
 }
-.main-contents .main-works .main-works-wrap .works-list li:nth-child(odd) .works-list-img {
+.main-contents .main-works .main-works-wrap .works-list li:nth-child(even) .works-list-img {
     /* order: 1; */
-    background-color: var(--color-blue1);
+    background-color: var(--color-yellow1);
 }
-.main-contents .main-works .main-works-wrap .works-list li:nth-child(odd) .works-tit {
+.main-contents .main-works .main-works-wrap .works-list li:nth-child(even) .works-tit {
     /* order: 2; */
-    background-color: var(--color-blue2);
-    border: 1px solid var(--color-blue1);
+    background-color: var(--color-yellow2);
+    border: 1px solid var(--color-yellow1);
 }
 .main-contents .main-works .main-works-wrap .works-list li:nth-child(odd) .works-tit .works-txt p {
     color: var(--color-blue1);
@@ -210,7 +214,7 @@ header .gnb .plus-btn a {
 }
 .main-contents .main-works .main-works-wrap .works-list li .works-list-img {
     height: 408px;
-    background-color: var(--color-yellow1);
+    background-color: var(--color-blue1);
     border-radius: 40px;
 
     display: flex;
@@ -230,8 +234,8 @@ header .gnb .plus-btn a {
 .main-contents .main-works .main-works-wrap .works-list li .works-tit {
 
     height: 408px;
-    border: 1px solid var(--color-yellow1);
-    background-color: var(--color-yellow2);
+    border: 1px solid var(--color-blue1);
+    background-color: var(--color-blue2);
     border-radius: 40px;
 
     position: relative;
@@ -284,7 +288,7 @@ header .gnb .plus-btn a {
 footer {
     margin: 16px;
     width: 100%;
-    margin: 80px auto 16px;
+    margin: 100px auto 16px;
 
     display: flex;
     flex-direction: column;

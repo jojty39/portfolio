@@ -61,7 +61,7 @@ header .gnb .plus-btn a {
     line-height: 46px;
     border-radius: 30px;
     padding-left: 30px;
-    margin: 80px 0 16px 0;   
+    margin: 120px 0 16px 0;   
 }
 
 
@@ -161,14 +161,14 @@ header .gnb .plus-btn a {
     display: flex;
     flex-direction: row;
 }
-.main-contents .main-works .main-works-wrap .works-list li:nth-child(odd) .works-list-img {
-    order: 1;
-    background-color: var(--color-blue1);
-}
-.main-contents .main-works .main-works-wrap .works-list li:nth-child(odd) .works-tit {
+.main-contents .main-works .main-works-wrap .works-list li:nth-child(even) .works-list-img {
     order: 2;
-    background-color: var(--color-blue2);
-    border: 1px solid var(--color-blue1);
+    background-color: var(--color-yellow1);
+}
+.main-contents .main-works .main-works-wrap .works-list li:nth-child(even) .works-tit {
+    order: 1;
+    background-color: var(--color-yellow2);
+    border: 1px solid var(--color-yellow1);
 }
 .main-contents .main-works .main-works-wrap .works-list li:nth-child(odd) .works-tit .works-txt p {
     color: var(--color-blue1);
@@ -185,7 +185,7 @@ header .gnb .plus-btn a {
     width: 680px;
     height: 28rem;
     height: 680px;
-    background-color: var(--color-yellow1);
+    background-color: var(--color-blue1);
     border-radius: 40px;
     /* border-radius: 3rem; */
 
@@ -202,8 +202,8 @@ header .gnb .plus-btn a {
     
     width: 680px;
     height: 680px;
-    border: 1px solid var(--color-yellow1);
-    background-color: var(--color-yellow2);
+    border: 1px solid var(--color-blue1);
+    background-color: var(--color-blue2);
     border-radius: 40px;
 
     position: relative;
@@ -250,7 +250,7 @@ header .gnb .plus-btn a {
 /***** footer *****/
 footer {
     width: 1380px;
-    margin: 80px auto 16px;
+    margin: 120px auto 16px;
 
     /* gap: 10px; */
     display: flex;
