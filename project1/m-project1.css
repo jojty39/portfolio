@@ -1,0 +1,51 @@
+@charset "utf-8";
+/* media="(max-width:1399px)"  */
+
+/***** header / .gnb *****/
+header {
+    text-align: center;
+    line-height: 50px;
+    margin-top: 16px;
+}
+header .gnb {
+    margin-left: 16px;
+}
+/*** header-logo ***/
+header .gnb .header-logo {    
+    width: 180px;
+}
+header .gnb .header-logo li {
+    background-color: var(--color-dark1);
+    color: var(--color-white1);
+    margin-right: 2px;
+    font-weight: 600;
+}
+header .gnb .header-logo .dot {
+    width: 26px;
+    height: 50px;
+    border-radius: 11px;
+    font-size: 22px;
+}
+header .gnb .header-logo .slash {
+    width: 50px;
+    height: 50px;
+    border-radius: 12px;
+    font-size: 22px;
+}
+header .gnb .header-logo .name { 
+    width: 102px;
+    height: 50px;
+    border-radius: 30px;
+    font-size: 16px;
+}
+/*** plus-btn ***/
+header .gnb .plus-btn a {
+    display: block;
+    width: 50px;
+    height: 50px;
+    line-height: 40px;
+    font-weight: 100;
+    font-size: 70px;
+    border-radius: 100%;
+    background-color: var(--color-gray2);
+}
