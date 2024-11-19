@@ -104,9 +104,90 @@ header .gnb .plus-btn a {
 /*** main-prototype-wrap ***/
 /*** prototype-list ***/
 /*** prototype-list-img ***/
-
 /*** prototype-tit ***/
 /*** prototype-txt ***/
+
+.main-contents .main-prototype {}
+.main-contents .main-prototype .main-prototype-wrap {}
+.main-contents .main-prototype .main-prototype-wrap .prototype-list {}
+.main-contents .main-prototype .main-prototype-wrap .prototype-list li {
+    display: flex;
+    flex-direction: row;
+}
+
+.main-contents .main-prototype .main-prototype-wrap .prototype-list li div {
+    margin: 0 16px 16px 0;
+}
+
+.main-contents .main-prototype .main-prototype-wrap .prototype-list li:nth-child(even) .prototype-list-img {
+    order: 2;
+    /* margin-left: 16px; */
+}
+.main-contents .main-prototype .main-prototype-wrap .prototype-list li:nth-child(even) .prototype-tit {
+    order: 1;
+}
+.main-contents .main-prototype .main-prototype-wrap .prototype-list .prototype-list-img {
+    width: 804px;
+    height: 28rem;
+    height: 692px;
+    background-color: var(--color-blue1);
+    border-radius: 40px;
+    /* border-radius: 3rem; */
+    /* margin: 16px 16px 0 16px; */
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main-contents .main-prototype .main-prototype-wrap .prototype-list .prototype-list-img img {
+    width: 240px;  
+}
+.main-contents .main-prototype .main-prototype-wrap .prototype-list .box1 img {
+    width: 520px; 
+}
+.main-contents .main-prototype .main-prototype-wrap .prototype-list .box3 img {
+    width: 490px; 
+}
+.main-contents .main-prototype .main-prototype-wrap .prototype-list .prototype-tit {
+    width: 580px;
+    height: 692px;
+    border: 1px solid var(--color-blue1);
+    background-color: var(--color-blue2);
+    border-radius: 40px;
+    /* padding: 48px 20px 20px 60px; */
+    /* margin: 16px 0px 0 0px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.main-contents .main-prototype .main-prototype-wrap .prototype-list .prototype-tit .prototype-txt {
+    /* position: absolute; */
+    /* left: 15%; top: 15%; */
+}
+.main-contents .main-prototype .main-prototype-wrap .prototype-list .prototype-tit .prototype-txt span {
+    font-size: var(--font-size-ml);
+    color: var(--color-blue1);
+    font-weight: 600;
+
+}
+.main-contents .main-prototype .main-prototype-wrap .prototype-list .prototype-tit .prototype-txt h2 {
+    font-size: var(--font-size-xxxl);
+    font-weight: 700;
+    margin: 8px 0 16px 0;
+}
+.main-contents .main-prototype .main-prototype-wrap .prototype-list .prototype-tit .prototype-txt ul {
+    font-size: var(--font-size-ml);
+    /* margin: 16px; */
+    margin-top: 280px;
+    /* padding: 16px 8px 32px 36px; */
+    /* padding-left: 40px; */
+}
+.main-contents .main-prototype .main-prototype-wrap .prototype-list li .prototype-tit .prototype-txt ul li {
+    list-style-type: disc;
+    display: list-item; 
+    margin-left: 20px;
+}
 
 
 
@@ -136,7 +217,7 @@ header .gnb .plus-btn a {
 }
 .main-contents .main-styleGuide .main-styleGuide-wrap .styleGuide-list .styleGuide-box h4 {
     font-size: var(--font-size-ml);
-    color: var(--color-gray1);
+    color: var(--color-dark2);
     font-weight: 300;
     width: 100%;
     margin: 0;
