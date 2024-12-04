@@ -225,6 +225,9 @@ header .gnb .plus-btn a {
 .main-contents .main-works .main-works-wrap .works-list li .works-list-img img {
     width: 144px;  
 }
+.works-list-project2_img {
+    background: url(./images/project2_img.jpg) 50% / cover;
+}
 
 .main-contents .main-works .main-works-wrap .works-list li .works-list-img:hover {
     /* border-radius: 80px; */
