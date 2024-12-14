@@ -131,38 +131,227 @@ header .gnb .plus-btn a {
 }
 
 
+/***** main-goal *****/
+.main-contents .main-goal {}
+.main-contents .main-goal .main-title {}
+.main-contents .main-goal .main-goal-wrap {
+    border: 1px solid var(--color-dark1);
+    border-radius: 40px;
+    background-color: var(--color-white2);
+}
+.main-contents .main-goal .main-goal-wrap .main-goal-list { 
+    padding: 32px 32px;
+    margin: 0 auto;
+}
+.main-contents .main-goal .main-goal-wrap .main-goal-list .main-goal-box {
+    padding: 16px 16px 16px 16px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    /* justify-content: space-between; */
+}
+.main-contents .main-goal .main-goal-wrap .main-goal-list .main-goal-box h2 {
+    font-size: var(--font-size-xl);
+    font-weight: 600;
+    width: 100%;
+    width: 50%;
+    text-align: center;
+    /* margin: 16px 0 0; */
+    padding: 16px 0 16px 0;
+}
+.main-contents .main-goal .main-goal-wrap .main-goal-list .main-goal-box ul {
+    font-size: var(--font-size-ml);
+    width: 40%;
+}
+.main-contents .main-goal .main-goal-wrap .main-goal-list .main-goal-box ul li {}
 
 
+/***** main-vision *****/
+.main-contents .main-vision-wrap {
+
+    border: 1px solid var(--color-dark1);
+    border-radius: 40px;
+    background-color: var(--color-white2);
+    /* padding: 8px 120px 80px 120px; */
+    text-align: center;
+
+    margin-bottom: 110px;
+
+    /* display: flex; */
+    /* align-items: center; */
+    /* justify-content: center; */
+    /* height: 80vh; */
+    height: 780px;
+}
+.main-contents .main-vision-wrap .vision-list {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* padding: 16px; */
+
+}
+.main-contents .main-vision-wrap .vision-list .vision-box {
+    /* padding: 16px; */
+}
+.main-contents .main-vision-wrap .vision-list .vision-box h4 {
+    font-size: var(--font-size-ml);
+    color: var(--color-dark2);
+    font-weight: 300;
+    /* width: 100%; */
+
+    /* padding: 0 16px 16px 16px; */
+}
+.main-contents .main-vision-wrap .vision-list .vision-box ul {}
+.main-contents .main-vision-wrap .vision-list .vision-box ul li {}
+.main-contents .main-vision-wrap .vision-list .vision-box ul li h2 {
+    font-size: var(--font-size-xxl);
+    font-weight: 700;
+    margin: 32px 0 108px 0;
+}
+
+.main-contents .main-vision-wrap .vision-list .keywords-box {
+
+    position: relative;
+    margin: 0 auto;
+    /* width: 800px;  */
+    /* height: 340px; */
+
+}
+.main-contents .main-vision-wrap .vision-list .keywords-box h4 {
+    font-size: var(--font-size-ml);
+    color: var(--color-dark2);
+    font-weight: 300;
+    /* width: 100%; */
+    margin-bottom: 42px;
+    /* padding: 0 16px 16px 16px; */
+}
+
+.main-contents .main-vision-wrap .vision-list .keywords-box ul {
+    display: flex;
+    
+    justify-content: space-between;
+    /* width: 100%; */
+    /* position: relative; */
+}
+.main-contents .main-vision-wrap .vision-list .keywords-box ul li {
+    /* position: relative;  */
+    position: static; /* position 속성 초기화 */
+    transform: none; /* transform 초기화 */
+    z-index: auto; /* z-index 초기화 */
+
+    padding: 0px 40px 40px 40px;
+
+    width: 310px;
+    height: 310px;
+    border-radius: 100%;
+    text-align: center;
+    font-size: var(--font-size-ml);
+    color: var(--color-white1);
+    /* z-index: 1; */
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+/* 키워드 위치 조정 */
+.keywords-box ul li:nth-child(1) {
+    background-color: var(--color-dark1);
+    margin-right: 80px;
+    /* z-index: 1; */
+}
+
+.keywords-box ul li:nth-child(2) {
+    /* left: 50%; transform: translateX(-50%); */
+    background-color: var(--color-dark2);
+    margin-right: 80px;
+    /* z-index: 2; */
+}
+
+.keywords-box ul li:nth-child(3) {
+    /* z-index: 3; */
+    /* right: 0; */
+    background-color: var(--color-dark1);
+}
+.main-contents .main-vision-wrap .vision-list .keywords-box ul li h2 {   
+    color: var(--color-white1);
+    font-size: var(--font-size-xxl);
+    font-weight: 450;
+    /* background-color: var(--color-dark1); */
+    /* width: 300px; height: 300px; */
+    /* border-radius: 100%; */
+    text-align: center; 
+    /* line-height: 100px; */
+}
+
+/* 모바일 숨기기!!!!! PC에서만 보이기!!!!!! */
+.main-contents .main-vision-wrap .vision-list .keywords-box ul li p {
+    display: block;
+    font-weight: 200;
+}
 
 
+/***** main-solution *****/
+.main-contents .main-solution {
 
+}
+.main-contents .main-solution .main-title {}
+.main-contents .main-solution .main-solution-wrap {
+    text-align: center;
+    border: 1px solid var(--color-dark1);
+    border-radius: 40px;
+    background-color: var(--color-white2);
+    /* padding: 50px 30px 50px 30px; */
+    /* width: 100%; height: 100%; */
+    margin-bottom: 110px;
+    padding: 100px 16px 100px 16px;
 
+}
+.main-contents .main-solution .main-solution-wrap .solution-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.main-contents .main-solution .main-solution-wrap .solution-list .solution-box {
 
-/***** main-strategy *****/
-/*** main-strategy-wrap ***/
-/*** strategy-list ***/
-/*** strategy-box ***/
+}
+.main-contents .main-solution .main-solution-wrap .solution-list .solution-box h4 {
+    font-size: var(--font-size-l);
+    color: var(--color-dark2);
+    font-weight: 400;
+    margin-bottom: 32px;
+}
+.main-contents .main-solution .main-solution-wrap .solution-list .solution-box ul li {
+    font-size: var(--font-size-ml);
+    font-weight: 400;
+    border-radius: 5px;
+    /* padding: 16px 32px 16px 32px; */
+    padding: 22px 0px 22px 0px;
+    margin: 24px 0;
+    width: 450px;
+}
+.main-contents .main-solution .main-solution-wrap .solution-list .solution-box .as-is-text {
+    margin-bottom: 0px;
 
-
-
-
-
-/*****main-solution *****/
-/*** main-solution-wrap ***/
-/*** solution-list ***/
-/*** solution-box ***/
-
-
-
+}
+.main-contents .main-solution .main-solution-wrap .solution-list .solution-box1 {
+    margin-right: 100px;
+}
+.main-contents .main-solution .main-solution-wrap .solution-list .solution-box .as-is-text li {
+    color: var(--color-dark2);
+    background-color: var(--color-white3);
+}
+.main-contents .main-solution .main-solution-wrap .solution-list .solution-box .to-be-text li {
+    color: var(--color-white1);
+    background-color: var(--color-dark1);
+    font-weight: 500;
+}
 
 
 
 /***** main-prototype *****/
-/*** main-prototype-wrap ***/
-/*** prototype-list ***/
-/*** prototype-list-img ***/
-/*** prototype-tit ***/
-/*** prototype-txt ***/
 
 .main-contents .main-prototype {}
 .main-contents .main-prototype .main-prototype-wrap {}
