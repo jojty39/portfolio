@@ -228,6 +228,9 @@ header .gnb .plus-btn a {
 .works-list-project2_img {
     background: url(./images/project2_img.jpg) 50% / cover;
 }
+.works-list-project3_img {
+    background: url(./images/project3_img.png) 50% / cover;
+}
 
 .main-contents .main-works .main-works-wrap .works-list li .works-list-img:hover {
     /* border-radius: 80px; */
