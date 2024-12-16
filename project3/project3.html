@@ -73,9 +73,8 @@
                     <div class="main-goal-box">
                         <h2>Project Goal</h2>
                         <ul>
-                            <li>단일 프로모션 중심에서 벗어나, 다양한 콘텐츠를 담은 첫 화면 구성</li>
-                            <li>다양한 기기에 최적화 된 반응형 웹 사이트 구현</li>
-                            <li>MediaQueries 이용 능력 향상</li>
+                            <li>다양한 정보를 효율적으로 전달할 수 있는 직관적 인터페이스 제공</li>
+                            <li>GSAP와 ScrollTrigger를 활용한 동적 인터랙션 구현 능력 향상</li>
                         </ul>
                     </div>                
                 </div>
@@ -89,11 +88,9 @@
                     <div class="main-publishing-box">
                         <h2>Publishing</h2>
                         <ul>
-                            <li>MediaQueries를 이용한 반응형 웹페이지 구현</li>
-                            <li>CSS 애니메이션으로 자동 슬라이딩 텍스트 구현</li>
-                            <li>가상 요소(::after) 활용으로 시각적 구성을 개선</li>
-                            <li>슬라이더 구현 (Mobile: 버튼으로 아이템 전환
-                                PC: 마우스오버로 슬라이더 표시)</li>
+                            <li>requestAnimationFrame을 활용한 부드러운 마우스 이동 구현</li>
+                            <li>GSAP ScrollTrigger를 활용한 가로 스크롤 애니메이션 구현</li>
+                            <li>GSAP.timeline을 활용하여 스크롤 시 각 섹션에 다양한 애니메이션 효과 적용</li>
                         </ul>
                     </div>                
                 </div>
@@ -110,16 +107,16 @@
                     <li class="vision-box">
                         <h4>UI Vision</h4>
                         <ul>
-                            <li><h2>디지털 캔버스에 그리는 예술의 경험</h2></li>
+                            <li><h2>효율적인 정보 전달을 위한 직관적인 설계</h2></li>
                         </ul>
                     </li>
                     <li class="keywords-box">
                         <h4>Keywords</h4>
                         <ul>
                             <li>
-                                <h2>몰입감</h2>
-                                <p>미술관에 있는 느낌을 주는<br>
-                                    이미지와 디자인 제공</p>
+                                <h2>명료한</h2>
+                                <p>전시, 영상, 편의시설 등의 <br>
+                                    정보를 명료하게 구성</p>
                                     
                             </li>
                             <li>
@@ -128,9 +125,9 @@
                                 결합하여 아름다움 추구
                             </li>
                             <li>
-                                <h2>정보화</h2>
-                                <p>전시, 영상, 편의시설 등의<br>
-                                정보를 명료하게 구성</p>
+                                <h2>역동적</h2>
+                                <p>사용자 동작에 반응하는<br>
+                                    인터랙션 디자인</p>
                             </li>
                         </ul>
                     </li>
@@ -149,12 +146,12 @@
                     <li class="styleGuide-box box2">
                         <ul>
                             <li>
-                                <h4>Typography</h4>
-                                <img src="./img-project3/project3_typography.png" alt="Typography"> 
+                                <h4>Typography (ko)</h4>
+                                <img src="./img-project3/project3_typography(ko).png" alt="typography(ko)"> 
                             </li>
                             <li>
-                                <!-- <h4>Icons</h4> -->
-                                <!-- <img src="./img-project2/project2_icons.png" alt="Layout">  -->
+                                <h4>Typography (en)</h4>
+                                <img src="./img-project3/project3_typography(en).png" alt="typography(en)"> 
                             </li>                            
                         </ul>                       
                     </li>
@@ -178,16 +175,17 @@
                         <div class="prototype-tit">
                             <div class="prototype-txt prototype-txt-top">
                                 <span>Issue</span>
-                                <h2>글자를 계속 움직이게 할 수 있을까?</h2>
+                                <h2>영상을 고화질로 계속 재생시킬 수 있을까?</h2>
                                 <ul>
-                                    <li>글자를 흐르는 것처럼 표현하기 위해 &lt;marquee&gt; 태그를 사용으나, 웹 접근성과 표준 준수 측면에서 적합하지 않은 요소라 대신할 수 있는 방법을 찾아야함</li>
+                                    <li>유튜브의 기본 설정으로 인해 영상이 고화질(1080p)로 재생되지 않고, 영상이 한 번만 재생되고 종료됨</li>
                                 </ul>
                             </div>
                             <div class="prototype-txt prototype-txt-bottom">
                                 <span>Solution</span>
-                                <h2>애니메이션 속성으로 구현해보자!</h2>
+                                <h2>고화질, 반복 재생 속성을 추가하여 해결하자!</h2>
                                 <ul>
-                                    <li><strong>CSS 애니메이션 적용:</strong> @keyframes와 animation 속성을 활용하여 텍스트가 반복적으로 이동하는 (흐르는) 효과 구현</li>
+                                    <li><strong>고화질 (vq=hd1080):</strong> URL에 vq=hd1080 파라미터를 추가하여 영상이 1080p 해상도로 고정되도록 설정</li>
+                                    <li><strong>반복 재생 (playlist와 loop):</strong> playlist에 영상 ID를 추가하고 loop=1 설정으로 동일 영상을 반복 재생</li>
                                 </ul>
                             </div>
                         </div><!-- prototype-tit -->
@@ -199,18 +197,18 @@
                         <div class="prototype-tit">
                             <div class="prototype-txt prototype-txt-top">
                                 <span>Issue</span>
-                                <h2>모바일과 PC의 줄바꿈이 다른데?</h2>
+                                <h2>흰 배경에도 커서를 잘 보이게 할 수 있을까?</h2>
                                 <ul>
-                                    <li>동일한 HTML 구조에서 줄바꿈이 모바일과 PC에서 다르게 표현되어야함</li>
+                                    <li>커서 색상을 흰색으로 지정했는데 ‘main-display’ 구간처럼 배경색이 흰색인 경우, 커서 색상이 배경과 구분되지 않아 시각적 가독성이 떨어짐</li>
                                 </ul>
                             </div>
                             <div class="prototype-txt prototype-txt-bottom">
                                 <span>Solution</span>
-                                <h2>가상 요소와 미디어쿼리를 활용해보자!</h2>
+                                <h2>mix-blend-mode로 해결해보자!</h2>
                                 <ul>
-                                    <li><strong>HTML:</strong> 줄바꿈 적용해야 할 부분에 .newline 클래스 추가</li>
-                                    <li><strong>모바일 CSS:</strong> 가상요소(::after)에 줄바꿈 특수문자(\A)를 추가하고, 이를 적용하기 위해 white-space:pre; 속성 사용</li>
-                                    <li><strong>PC CSS:</strong> 줄바꿈 제거 위해 .newline 요소를 display:none;으로 숨김</li>
+                                    <li><strong>mix-blend-mode: difference;</strong> 는 배경과 요소의 색상 차이를 기반으로 색상을 계산하여 표시함</li>
+                                    <li>배경색이 흰색일 때, 커서가 검은색으로 반전되고, 배경색이 검은색일 때는 흰색으로 표시되어 자동 반전 효과 제공</li>
+                                    <li>이를 통해 동적이고 가독성 높은 커서 표시를 구현 가능</li>
                                 </ul>
                             </div>
                         </div><!-- prototype-tit -->
@@ -222,18 +220,18 @@
                         <div class="prototype-tit">
                             <div class="prototype-txt prototype-txt-top">
                                 <span>Issue</span>
-                                <h2>&lt;a&gt;를 클릭하면 위로 올라가서 방해되는데?</h2>
+                                <h2>애니메이션 실행 후, 초기 상태로 돌아가게 할 수 있을까?</h2>
                                 <ul>
-                                    <li>href=”#” 사용 시, 기본 동작이 페이지 상단으로 이동하는 것이라 UI에 방해됨</li>
+                                    <li>to속성을 사용하여 애니메이션 실행 후 요소가 초기 상태로 돌아가지 않는 문제가 발생하여 css구조를 변경하여 해결했으나, 변경 없이 gsap만을 사용해 초기 상태로 돌아가고싶음</li>
                                 </ul>
                             </div>
                             <div class="prototype-txt prototype-txt-bottom">
                                 <span>Solution</span>
-                                <h2>event.preventDefalut()로 해결해보자!</h2>
+                                <h2>fromTo() 메서드 활용해보자!</h2>
                                 <ul>
-                                    <li><strong>$(‘a[href=#]’):</strong> href=”#”를 가진 모든 &lt;a&gt; 태그 선택</li>
-                                    <li><strong>.on(‘click’, ...)</strong> 클릭 이벤트 발생 시 동작을 지정</li>
-                                    <li><strong>event.preventDefalut():</strong> 브라우저의 기본 동작(페이지 상단 이동) 차단</li>
+                                    <li><strong>fromTo():</strong> 애니메이션 시작(from)과 종료(to) 상태를 명확히 지정</li>
+                                    <li><strong>scrub:</strong> 스크롤 되돌림 시 초기 상태로 복구</li>
+                                    <li><strong>ScrollTrigger:</strong> 스크롤 범위를 설정해 자연스러운 동작 구현</li>
                                 </ul>
                             </div>
                         </div><!-- prototype-tit -->
