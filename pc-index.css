@@ -141,6 +141,7 @@ header .gnb .plus-btn a {
     font-size: var(--font-size-xl);
     font-weight: 600;
     width: 50%;
+    margin: 0;
 }
 .main-contents .main-skills-wrap .main-skills-list li:nth-child(1) h2 {
     /* background-color: dodgerblue; */
@@ -151,6 +152,7 @@ header .gnb .plus-btn a {
     font-size: var(--font-size-ml);
     width: 50%;
     line-height: 1.8;
+    padding-top: 32px;
 }
 .main-contents .main-skills-wrap .main-skills-list li ul li {}
 

@@ -68,7 +68,9 @@ html {
 /* 드래그 */
 html ::selection {
   background-color: var(--color-white2);
+  background-color: #018848;
   color: var(--color-dark1);
+  color: var(--color-white1);
 }
 /* 스크롤바 */
 html ::-webkit-scrollbar {

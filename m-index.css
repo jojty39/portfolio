@@ -265,7 +265,7 @@ header .gnb .project-menu.active .project-menu-list {
 
 }
 .main-contents .main-skills-wrap .main-skills-list .main-skils-box {
-       display: flex;
+    display: flex;
     flex-direction: column;
     align-items: center;
     /* justify-content: center; */
