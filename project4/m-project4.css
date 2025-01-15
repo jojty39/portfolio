@@ -1,11 +1,20 @@
 @charset "utf-8";
 /* media="(max-width:1399px)"  */
 
+
 /***** header / .gnb *****/
 header {
     text-align: center;
     line-height: 50px;
-    margin-top: 16px;
+    /* margin-top: 16px; */
+
+    position: fixed;
+    top: 0;
+    top: 16px;
+    left: 0;
+    width: 100%;
+    z-index: 99999;
+    transition: transform 0.3s ease-in-out;
 }
 header .gnb {
     margin-left: 16px;
@@ -20,23 +29,44 @@ header .gnb .header-logo li {
     margin-right: 2px;
     font-weight: 600;
 }
-header .gnb .header-logo .dot {
+
+header .gnb ul .logo {
+    /* width: 180px; */
+    background-color: var(--color-dark1);
+    color: var(--color-white1);
+    margin-right: 2px;
+    font-weight: 600;
+}
+
+header .gnb .dot {
     width: 26px;
     height: 50px;
     border-radius: 11px;
     font-size: 22px;
+    background-color: var(--color-dark1);
+    color: var(--color-white1);
+    margin-right: 2px;
+    font-weight: 600;
 }
-header .gnb .header-logo .slash {
+header .gnb .slash {
     width: 50px;
     height: 50px;
     border-radius: 12px;
     font-size: 22px;
+    background-color: var(--color-dark1);
+    color: var(--color-white1);
+    margin-right: 2px;
+    font-weight: 600;
 }
-header .gnb .header-logo .name { 
+header .gnb .name { 
     width: 102px;
     height: 50px;
     border-radius: 30px;
     font-size: 16px;
+    background-color: var(--color-dark1);
+    color: var(--color-white1);
+    margin-right: 2px;
+    font-weight: 600;
 }
 /*** plus-btn ***/
 header .gnb .plus-btn a {
@@ -49,7 +79,93 @@ header .gnb .plus-btn a {
     border-radius: 100%;
     background-color: var(--color-gray2);
 }
+/*** plus-btn ***/
+header .gnb .plus-btn a {
+    display: block;
+    width: 50px;
+    height: 50px;
+    position: relative;
+    border-radius: 100%;
+    background-color: var(--color-gray2);
+    transition: transform 0.3s ease-in-out; /* 회전 애니메이션 */
+}
+/* 가로선 */
+header .gnb .plus-btn a::before {
+    content: "";
+    position: absolute;
+    top: 50%; /* 중앙 정렬 */
+    left: 50%;
+    width: 28px;
+    height: 2px;
+    background-color: var(--color-dark1);
+    transform: translate(-50%, -50%);
+    transition: transform 0.3s ease-in-out;
+}
+/* 세로선 */
+header .gnb .plus-btn a::after {
+    content: "";
+    position: absolute;
+    top: 50%; /* 중앙 정렬 */
+    left: 50%;
+    width: 2px;
+    height: 28px;
+    background-color: var(--color-dark1);
+    transform: translate(-50%, -50%);
+    transition: opacity 0.3s ease-in-out;
+}
 
+/* 클릭 시 상태 변경 */
+header .gnb .plus-btn a.active {
+    transform: rotate(180deg); /* 버튼 전체 회전 */
+}
+/* 클릭 시 변화 */
+header .gnb .plus-btn a.active::after {
+    opacity: 0; /* 세로선 숨기기 */
+}
+
+header .gnb .project-menu {
+    display: flex;
+    /* justify-content: flex-start; */
+    /* align-items: center; */
+    flex-wrap: wrap; /* 화면 크기에 따라 줄 바꿈 */
+}
+header .gnb .project-menu .project-menu-list {
+    font-size: var(--font-size-m);
+    font-weight: 700;
+    text-transform: none;
+}
+header .gnb .project-menu .project-menu-list a {
+    display: block;
+    /* border: 2px solid var(--color-dark1); */
+    border-radius: 12px;
+    background-color: var(--color-white1);
+    padding: 1px 16px;
+    margin: 2px;
+    transition: 0.3s ease-in-out;
+
+}
+header .gnb .project-menu .project-menu-list a:hover {
+    border-radius: 28px;
+    border: none;
+}
+
+header .gnb .project-menu .list1 a {}
+header .gnb .project-menu .list2 a {}
+header .gnb .project-menu .list3 a {}
+header .gnb .project-menu .list4 a {}
+
+header .gnb .project-menu .project-menu-list {
+    display: none; /* 초기 상태로 숨김 */
+    opacity: 0; /* 투명도로 숨김 */
+    transform: translateY(-10px); /* 약간 위로 이동된 상태 */
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out; /* 부드러운 애니메이션 효과 */
+}
+
+header .gnb .project-menu.active .project-menu-list {
+    display: block; /* 보이게 전환 */
+    opacity: 1; /* 투명도 복원 */
+    transform: translateY(0); /* 원래 위치로 이동 */
+}
 /*****  main-title *****/
 
 .main-title {

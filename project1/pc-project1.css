@@ -5,7 +5,7 @@
 header {
     text-align: center;
     line-height: 50px;
-    margin-top: 16px;
+    /* margin-top: 16px; */
 }
 header .gnb {
     margin-left: 16px;
