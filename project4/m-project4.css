@@ -233,7 +233,7 @@ header .gnb .project-menu.active .project-menu-list {
 }
 
 .main-contents .main-intro .main-intro-wrap .intro-bg {
-
+   
 }
 .main-contents .main-intro .main-intro-wrap .intro-bg .intro-img {
     /* background: url(./img-project3/project3_img.png) 50% / cover; */
@@ -243,6 +243,7 @@ header .gnb .project-menu.active .project-menu-list {
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: var(--color-white2);
 }
 .main-contents .main-intro .main-intro-wrap .intro-bg .intro-img img {
     width: 144px;
